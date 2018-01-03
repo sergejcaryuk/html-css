@@ -1,0 +1,178 @@
+﻿* {
+	box-sizing: border-box;
+}
+
+.block-special-offer {
+	background: #ff006c;
+	color: white;
+	height: 100px;
+}
+
+.special-offer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 1024px;
+	height: 100px;	
+	margin: auto;
+
+}
+
+.special-offer__icon {
+	margin-left: 34px;
+	margin-right: 18px;
+}
+
+.special-offer__text-date {	
+	flex-grow: 2;
+	font-size: 16px;
+}
+
+.special-offer__text-offer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	vertical-align: middle;
+
+	flex-basis: 430px;
+	height: 55px;	
+	padding: 20px 25px;	
+	
+	font-weight: 600;	
+	font-size: 14px;
+	text-align: center;
+
+	background: #e70163;
+	border-radius: 40px 0 0 40px;
+
+}
+
+
+.element-offer {
+	display: flex;	
+	max-width: 600px;	
+}
+
+
+.special-offer__read-more-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	width: 150px;
+	height: 55px;
+	padding: 10px 20px;		
+	
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+
+	border-radius: 0 40px 40px 0;
+	background: #f20368;
+}
+
+.special-offer__close-button {	
+	flex-grow: 0;	
+	
+	background: url(img/close.png) no-repeat;
+	background-size: 24px 24px;
+	
+	min-width: 24px;
+	height: 24px;
+	margin-left: 33px;
+	margin-right: 37px;
+	
+}
+
+.special-offer__close-button:hover {
+	cursor: pointer;
+}	
+
+@media screen and (max-width: 960px) {
+    .special-offer__text-date {
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+	.block-special-offer {
+		height: auto;
+	}
+
+	.special-offer {
+		
+		flex-direction: column;	
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;	
+
+		height: 560px;		
+		margin: auto;		
+		padding: 20px;
+
+	}
+
+	.special-offer__icon {
+		width: 90px;
+		height: 90px;
+		margin: 0;
+	}
+
+    .special-offer__text-date {
+    	display: block;
+    	flex-grow: 0;
+
+    	width: 150px;    	
+    	margin: 0;
+
+    	text-align: center;
+    }  
+
+    .special-offer__text-date br {
+		display: none;
+	}
+
+	.special-offer__text-date .nobr {
+		white-space: nowrap;
+	}  
+
+	.element-offer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.special-offer__text-offer {		
+		min-width: 280px;
+		max-width: 450px;
+		flex-basis: 200px;
+
+		background: none;
+
+		font-size: 27px;
+		margin: 0;
+	}	
+
+	.special-offer__read-more-button {		
+		
+		width: 280px;
+		margin: 0;
+		border-radius: 40px 40px 40px 40px;		
+	}
+
+	.special-offer__close-button {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	
+		height: 14px;
+		width: 14px;
+		margin: 0;
+
+		background-size: 14px 14px;		
+		
+	}
+
+}
